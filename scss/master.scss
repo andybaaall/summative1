@@ -1,6 +1,6 @@
 // imports  --------------------------------------------------------------------------------------------------
 //----------------------------------------------------------------------------------------------------------
-@import "variables"; //layout and color 
+@import "variables"; //layout and color
 
 // resets --------------------------------------------------------------------------------------------------
 //----------------------------------------------------------------------------------------------------------
@@ -18,7 +18,7 @@ row::after {
 }
 
 
-// layout and color --------------------------------------------------------------------------------------------------
+// layout  --------------------------------------------------------------------------------------------------
 //----------------------------------------------------------------------------------------------------------
 
 .float-left{
@@ -50,9 +50,13 @@ row::after {
   justify-content: space-around;
 }
 
-// page elements  --------------------------------------------------------------------------------------------------
+.align-center {
+  text-align: center;
+}
+
+// page elements  --------------------------------------------------------------------------------------------
 //----------------------------------------------------------------------------------------------------------
-@mixin header-svg {
+@mixin svg-icon {
   display: block;
   height: 8.33vh;
   width: 10vw;
@@ -64,12 +68,20 @@ row::after {
 
 .logo {
   background: url("../images/supreme-logo.svg");
-  @include header-svg;
+  @include svg-icon;
 }
 
 .hamburger-button {
   background: url("../images/hamburger-button.svg");
-  @include header-svg;
+  @include svg-icon;
+}
+
+.scroll-button {
+  background: url("../images/scroll-down-button.svg");
+  @include svg-icon;
+  margin: 0.5rem auto 0 auto;
+  position: relative;
+  bottom: 2rem;
 }
 
 .dropdown {
@@ -83,7 +95,7 @@ row::after {
 }
 
 .menu-container {
-  max-height: 71vh;
+  max-height: 62vh;
   overflow: scroll;
 }
 
@@ -100,7 +112,11 @@ row::after {
   border-image-repeat: round;
 }
 
-// type styling  --------------------------------------------------------------------------------------------------
+.bottom-bar-item {
+  //fix me! 
+}
+
+// type styling  --------------------------------------------------------------------------------------------
 //----------------------------------------------------------------------------------------------------------
 
 @font-face {
@@ -129,4 +145,9 @@ row::after {
 .dark-copy {
   @include copy;
   color: $tertiary-accent-color;
+}
+
+.large-copy {
+  @include copy;
+  font-size: 1.3rem;
 }

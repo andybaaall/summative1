@@ -364,6 +364,9 @@ row::after {
 .justify-space-around {
   justify-content: space-around; }
 
+.align-center {
+  text-align: center; }
+
 .logo {
   background: url("../images/supreme-logo.svg");
   display: block;
@@ -384,6 +387,19 @@ row::after {
   background-repeat: no-repeat;
   margin: 0.5rem 4.16%; }
 
+.scroll-button {
+  background: url("../images/scroll-down-button.svg");
+  display: block;
+  height: 8.33vh;
+  width: 10vw;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin: 0.5rem 4.16%;
+  margin: 0.5rem auto 0 auto;
+  position: relative;
+  bottom: 2rem; }
+
 .dropdown {
   display: none; }
 
@@ -393,7 +409,7 @@ row::after {
   padding-top: 2.5vh; }
 
 .menu-container {
-  max-height: 71vh;
+  max-height: 62vh;
   overflow: scroll; }
 
 .menu-item {
@@ -425,5 +441,10 @@ row::after {
   font-family: "Lato", sans-serif;
   font-weight: normal;
   color: #3C3C3C; }
+
+.large-copy {
+  font-family: "Lato", sans-serif;
+  font-weight: normal;
+  font-size: 1.3rem; }
 
 /*# sourceMappingURL=stylesheet.css.map */
