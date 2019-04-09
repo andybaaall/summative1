@@ -1,13 +1,3 @@
-body {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box; }
-
-row::after {
-  content: "";
-  clear: both;
-  display: block; }
-
 .col1 {
   min-width: 8.3333333333%; }
 
@@ -340,6 +330,17 @@ row::after {
 
 .background-color {
   background-color: #FAFAF3; }
+
+body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  background-color: #FAFAF3; }
+
+row::after {
+  content: "";
+  clear: both;
+  display: block; }
 
 .float-left {
   float: left; }
