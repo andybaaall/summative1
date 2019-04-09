@@ -1,0 +1,129 @@
+// resets --------------------------------------------------------------------------------------------------
+//----------------------------------------------------------------------------------------------------------
+
+body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+row::after {
+  content: "";
+  clear: both;
+  display: block;
+}
+
+
+// layout and color --------------------------------------------------------------------------------------------------
+//----------------------------------------------------------------------------------------------------------
+@import "variables";
+
+.float-left{
+  float: left;
+}
+
+.float-right{
+  float: right;
+}
+
+.fixed {
+  position: fixed;
+}
+
+.absolute-bottom {
+  position: absolute;
+  bottom: 0px;
+}
+
+.flexbox {
+  display: flex;
+}
+
+.justify-space-between {
+  justify-content: space-between;
+}
+
+.justify-space-around {
+  justify-content: space-around;
+}
+
+// page elements  --------------------------------------------------------------------------------------------------
+//----------------------------------------------------------------------------------------------------------
+@mixin header-svg {
+  display: block;
+  height: 8.33vh;
+  width: 10vw;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin: 0.5rem 4.16%;
+}
+
+.logo {
+  background: url("../images/supreme-logo.svg");
+  @include header-svg;
+}
+
+.hamburger-button {
+  background: url("../images/hamburger-button.svg");
+  @include header-svg;
+}
+
+.dropdown {
+  display: none;
+}
+
+.menu-tab {
+  min-height: 5.833vh;
+  text-align: center;
+  padding-top: 2.5vh;
+}
+
+.menu-container {
+  max-height: 71vh;
+  overflow: scroll;
+}
+
+.menu-item {
+  min-height: 5.83vh;
+  text-align: center;
+  padding-top: 2.5vh;
+}
+
+.dotted-bottom-border {
+  border-bottom: 0.3rem solid transparent;
+  border-image-source: url("../images/border-dots.svg");
+  border-image-slice: 33%;
+  border-image-repeat: round;
+}
+
+// type styling  --------------------------------------------------------------------------------------------------
+//----------------------------------------------------------------------------------------------------------
+
+@font-face {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: normal;
+  src: url(../fonts/Lato2OFL/Lato-Regular.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: bold;
+  src: url(../fonts/Lato2OFL/Lato-Bold.ttf) format("truetype");
+}
+
+@mixin copy {
+  font-family: "Lato", sans-serif;
+  font-weight: normal;
+}
+
+.copy {
+  @include copy;
+}
+
+.dark-copy {
+  @include copy;
+  color: $tertiary-accent-color;
+}

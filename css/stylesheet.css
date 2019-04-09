@@ -8,42 +8,14 @@ row::after {
   clear: both;
   display: block; }
 
-.float-left {
-  float: left; }
-
-.float-right {
-  float: right; }
-
-.fixed {
-  position: fixed;
-  z-index: 1;
-  background-color: red; }
-
-.small-container {
-  height: 8.333vh; }
-
-.container {
-  height: 12.5vh; }
-
-.menu-container-mobile {
-  height: 75vh;
-  overflow: scroll; }
-
-.coffee-tabs-container {
-  margin-top: 12.5vh; }
-
-.pagedown-button {
-  background-color: pink;
-  bottom: 100px; }
-
 .col1 {
-  width: 8.3333333333%; }
+  min-width: 8.3333333333%; }
 
 .col-tablet1 {
-  width: 8.3333333333%; }
+  min-width: 8.3333333333%; }
 
 .col-desktop1 {
-  width: 8.3333333333%; }
+  min-width: 8.3333333333%; }
 
 .offset-left1 {
   margin-left: 8.3333333333%; }
@@ -64,13 +36,13 @@ row::after {
   margin-right: 8.3333333333%; }
 
 .col2 {
-  width: 16.6666666667%; }
+  min-width: 16.6666666667%; }
 
 .col-tablet2 {
-  width: 16.6666666667%; }
+  min-width: 16.6666666667%; }
 
 .col-desktop2 {
-  width: 16.6666666667%; }
+  min-width: 16.6666666667%; }
 
 .offset-left2 {
   margin-left: 16.6666666667%; }
@@ -91,13 +63,13 @@ row::after {
   margin-right: 16.6666666667%; }
 
 .col3 {
-  width: 25%; }
+  min-width: 25%; }
 
 .col-tablet3 {
-  width: 25%; }
+  min-width: 25%; }
 
 .col-desktop3 {
-  width: 25%; }
+  min-width: 25%; }
 
 .offset-left3 {
   margin-left: 25%; }
@@ -118,13 +90,13 @@ row::after {
   margin-right: 25%; }
 
 .col4 {
-  width: 33.3333333333%; }
+  min-width: 33.3333333333%; }
 
 .col-tablet4 {
-  width: 33.3333333333%; }
+  min-width: 33.3333333333%; }
 
 .col-desktop4 {
-  width: 33.3333333333%; }
+  min-width: 33.3333333333%; }
 
 .offset-left4 {
   margin-left: 33.3333333333%; }
@@ -145,13 +117,13 @@ row::after {
   margin-right: 33.3333333333%; }
 
 .col5 {
-  width: 41.6666666667%; }
+  min-width: 41.6666666667%; }
 
 .col-tablet5 {
-  width: 41.6666666667%; }
+  min-width: 41.6666666667%; }
 
 .col-desktop5 {
-  width: 41.6666666667%; }
+  min-width: 41.6666666667%; }
 
 .offset-left5 {
   margin-left: 41.6666666667%; }
@@ -172,13 +144,13 @@ row::after {
   margin-right: 41.6666666667%; }
 
 .col6 {
-  width: 50%; }
+  min-width: 50%; }
 
 .col-tablet6 {
-  width: 50%; }
+  min-width: 50%; }
 
 .col-desktop6 {
-  width: 50%; }
+  min-width: 50%; }
 
 .offset-left6 {
   margin-left: 50%; }
@@ -199,13 +171,13 @@ row::after {
   margin-right: 50%; }
 
 .col7 {
-  width: 58.3333333333%; }
+  min-width: 58.3333333333%; }
 
 .col-tablet7 {
-  width: 58.3333333333%; }
+  min-width: 58.3333333333%; }
 
 .col-desktop7 {
-  width: 58.3333333333%; }
+  min-width: 58.3333333333%; }
 
 .offset-left7 {
   margin-left: 58.3333333333%; }
@@ -226,13 +198,13 @@ row::after {
   margin-right: 58.3333333333%; }
 
 .col8 {
-  width: 66.6666666667%; }
+  min-width: 66.6666666667%; }
 
 .col-tablet8 {
-  width: 66.6666666667%; }
+  min-width: 66.6666666667%; }
 
 .col-desktop8 {
-  width: 66.6666666667%; }
+  min-width: 66.6666666667%; }
 
 .offset-left8 {
   margin-left: 66.6666666667%; }
@@ -253,13 +225,13 @@ row::after {
   margin-right: 66.6666666667%; }
 
 .col9 {
-  width: 75%; }
+  min-width: 75%; }
 
 .col-tablet9 {
-  width: 75%; }
+  min-width: 75%; }
 
 .col-desktop9 {
-  width: 75%; }
+  min-width: 75%; }
 
 .offset-left9 {
   margin-left: 75%; }
@@ -280,13 +252,13 @@ row::after {
   margin-right: 75%; }
 
 .col10 {
-  width: 83.3333333333%; }
+  min-width: 83.3333333333%; }
 
 .col-tablet10 {
-  width: 83.3333333333%; }
+  min-width: 83.3333333333%; }
 
 .col-desktop10 {
-  width: 83.3333333333%; }
+  min-width: 83.3333333333%; }
 
 .offset-left10 {
   margin-left: 83.3333333333%; }
@@ -307,13 +279,13 @@ row::after {
   margin-right: 83.3333333333%; }
 
 .col11 {
-  width: 91.6666666667%; }
+  min-width: 91.6666666667%; }
 
 .col-tablet11 {
-  width: 91.6666666667%; }
+  min-width: 91.6666666667%; }
 
 .col-desktop11 {
-  width: 91.6666666667%; }
+  min-width: 91.6666666667%; }
 
 .offset-left11 {
   margin-left: 91.6666666667%; }
@@ -334,13 +306,13 @@ row::after {
   margin-right: 91.6666666667%; }
 
 .col12 {
-  width: 100%; }
+  min-width: 100%; }
 
 .col-tablet12 {
-  width: 100%; }
+  min-width: 100%; }
 
 .col-desktop12 {
-  width: 100%; }
+  min-width: 100%; }
 
 .offset-left12 {
   margin-left: 100%; }
@@ -359,5 +331,98 @@ row::after {
 
 .offset-right-desktop12 {
   margin-right: 100%; }
+
+.main-accent-color {
+  background-color: #E67A7D; }
+
+.secondary-accent-color {
+  background-color: #F2CFD0; }
+
+.background-color {
+  background-color: #FAFAF3; }
+
+.float-left {
+  float: left; }
+
+.float-right {
+  float: right; }
+
+.fixed {
+  position: fixed; }
+
+.absolute-bottom {
+  position: absolute;
+  bottom: 0px; }
+
+.flexbox {
+  display: flex; }
+
+.justify-space-between {
+  justify-content: space-between; }
+
+.justify-space-around {
+  justify-content: space-around; }
+
+.logo {
+  background: url("../images/supreme-logo.svg");
+  display: block;
+  height: 8.33vh;
+  width: 10vw;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin: 0.5rem 4.16%; }
+
+.hamburger-button {
+  background: url("../images/hamburger-button.svg");
+  display: block;
+  height: 8.33vh;
+  width: 10vw;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin: 0.5rem 4.16%; }
+
+.dropdown {
+  display: none; }
+
+.menu-tab {
+  min-height: 5.833vh;
+  text-align: center;
+  padding-top: 2.5vh; }
+
+.menu-container {
+  max-height: 71vh;
+  overflow: scroll; }
+
+.menu-item {
+  min-height: 5.83vh;
+  text-align: center;
+  padding-top: 2.5vh; }
+
+.dotted-bottom-border {
+  border-bottom: 0.3rem solid transparent;
+  border-image-source: url("../images/border-dots.svg");
+  border-image-slice: 33%;
+  border-image-repeat: round; }
+
+@font-face {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: normal;
+  src: url(../fonts/Lato2OFL/Lato-Regular.ttf) format("truetype"); }
+@font-face {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: bold;
+  src: url(../fonts/Lato2OFL/Lato-Bold.ttf) format("truetype"); }
+.copy {
+  font-family: "Lato", sans-serif;
+  font-weight: normal; }
+
+.dark-copy {
+  font-family: "Lato", sans-serif;
+  font-weight: normal;
+  color: #3C3C3C; }
 
 /*# sourceMappingURL=stylesheet.css.map */

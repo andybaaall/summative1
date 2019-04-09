@@ -1,0 +1,57 @@
+// 12 col layout function-----------------------------------------------------------------------------------
+//----------------------------------------------------------------------------------------------------------
+
+$columns: 12;
+$columnmin-width: 100%/$columns;
+$offsetLeft: 100%/$columns;
+$offsetRight: 100%/$columns;
+
+@for $i from 1 through $columns {
+  .col#{$i}{  // .colX
+    min-width: $columnmin-width * $i;
+  }
+  .col-tablet#{$i}{  // .colX
+    min-width: $columnmin-width * $i;
+  }
+  .col-desktop#{$i}{
+    min-width: $columnmin-width * $i;
+  }
+  .offset-left#{$i}{
+    margin-left: $offsetLeft * $i;
+  }
+  .offset-left-tablet#{$i}{
+    margin-left: $offsetLeft * $i;
+  }
+  .offset-left-desktop#{$i}{
+    margin-left: $offsetLeft * $i;
+  }
+  .offset-right#{$i}{
+    margin-right: $offsetRight * $i;
+  }
+  .offset-right-tablet#{$i}{
+    margin-right: $offsetRight * $i;
+  }
+  .offset-right-desktop#{$i}{
+    margin-right: $offsetRight * $i;
+  }
+}
+
+// colors --------------------------------------------------------------------------------------------------
+//----------------------------------------------------------------------------------------------------------
+
+$main-accent-color: #E67A7D;
+$secondary-accent-color: #F2CFD0;
+$tertiary-accent-color: #3C3C3C;
+$background-color: #FAFAF3;
+
+.main-accent-color {
+  background-color: $main-accent-color;
+}
+
+.secondary-accent-color {
+  background-color: $secondary-accent-color;
+}
+
+.background-color {
+  background-color: $background-color;
+}
