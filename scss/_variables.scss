@@ -8,13 +8,13 @@ $offsetRight: 100%/$columns;
 
 @for $i from 1 through $columns {
   .col#{$i}{  // .colX
-    min-width: $columnmin-width * $i;
+    width: $columnmin-width * $i;
   }
   .col-tablet#{$i}{  // .colX
-    min-width: $columnmin-width * $i;
+    width: $columnmin-width * $i;
   }
   .col-desktop#{$i}{
-    min-width: $columnmin-width * $i;
+    width: $columnmin-width * $i;
   }
   .offset-left#{$i}{
     margin-left: $offsetLeft * $i;
@@ -43,6 +43,12 @@ $main-accent-color: #E67A7D;
 $secondary-accent-color: #F2CFD0;
 $tertiary-accent-color: #3C3C3C;
 $background-color: #FAFAF3;
+$inactive-color: #848484;
+
+$supreme-color: #D52227;
+$boxer-color: #80B9ED;
+$colombia-color: #48B588;
+$ethiopia-color: #FFBA00;
 
 .main-accent-color {
   background-color: $main-accent-color;
@@ -54,4 +60,20 @@ $background-color: #FAFAF3;
 
 .background-color {
   background-color: $background-color;
+}
+
+.boxer-color {
+  background-color: $boxer-color;
+}
+
+.colombia-color {
+  background-color: $colombia-color;
+}
+
+.ethiopia-color {
+  background-color: $ethiopia-color;
+}
+
+.supreme-color {
+  background-color: $supreme-color;
 }

@@ -1,6 +1,7 @@
 // imports  --------------------------------------------------------------------------------------------------
 //----------------------------------------------------------------------------------------------------------
-@import "variables"; //layout and color
+@import "variables"; //layout and color]
+@import "typography";
 
 // resets --------------------------------------------------------------------------------------------------
 //----------------------------------------------------------------------------------------------------------
@@ -17,6 +18,14 @@ row::after {
   display: block;
 }
 
+@mixin clearfix {
+  &::after{
+    clear: both;
+    display: block;
+    content: '';
+  }
+}
+
 
 // layout  --------------------------------------------------------------------------------------------------
 //----------------------------------------------------------------------------------------------------------
@@ -31,6 +40,15 @@ row::after {
 
 .fixed {
   position: fixed;
+}
+
+.fixed-bottom {
+  height: 10vh;
+}
+
+.fixed-top{
+  position: relative;
+  height: 10vh;
 }
 
 .absolute-bottom {
@@ -54,12 +72,28 @@ row::after {
   text-align: center;
 }
 
+.align-left {
+  text-align: left;
+}
+
+.align-right {
+  text-align: right;
+}
+
+.grid-container {
+  min-height: 80vh;
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: repeat(3, 1fr);
+  overflow: scroll;
+}
+
 // page elements  --------------------------------------------------------------------------------------------
 //----------------------------------------------------------------------------------------------------------
 @mixin svg-icon {
   display: block;
   height: 8.33vh;
-  width: 10vw;
+  width: 11vw;
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
@@ -69,14 +103,16 @@ row::after {
 .logo {
   background: url("../images/supreme-logo.svg");
   @include svg-icon;
+  @include clearfix;
 }
 
 .hamburger-button {
   background: url("../images/hamburger-button.svg");
   @include svg-icon;
+  @include clearfix;
 }
 
-.scroll-button {
+.scroll-down-button {
   background: url("../images/scroll-down-button.svg");
   @include svg-icon;
   margin: 0.5rem auto 0 auto;
@@ -84,19 +120,46 @@ row::after {
   bottom: 2rem;
 }
 
-.dropdown {
+.scroll-up-button {
+  background: url("../images/scroll-up-button.svg");
+  @include svg-icon;
+  margin: 0.5rem auto 0 auto;
+  position: relative;
+  bottom: 2rem;
   display: none;
+}
+
+.dropdown {
+  position: absolute;
+  height: 0;
+  transition: 0.3s;
+  overflow-y: hidden;
+}
+
+.open {
+  height: 80vh;
+  z-index: 100;
+}
+
+.dropdown-menu-item {
+  min-height: 10vh;
+  text-align: center;
+  padding-top: 5.5vh;
+}
+
+.menu-tab-container{
+  @include clearfix;
+}
+
+.menu-container {
+  min-height: 70vh;
 }
 
 .menu-tab {
   min-height: 5.833vh;
   text-align: center;
   padding-top: 2.5vh;
-}
-
-.menu-container {
-  max-height: 62vh;
-  overflow: scroll;
+  @include clearfix;
 }
 
 .menu-item {
@@ -105,49 +168,72 @@ row::after {
   padding-top: 2.5vh;
 }
 
-.dotted-bottom-border {
+// border stles ------------------------------------------------------------------------------------------------------------
+@mixin dotted-bottom-border {
   border-bottom: 0.3rem solid transparent;
   border-image-source: url("../images/border-dots.svg");
   border-image-slice: 33%;
   border-image-repeat: round;
 }
-
-.bottom-bar-item {
-  //fix me! 
+.dotted-bottom-border {
+  @include dotted-bottom-border;
+}
+.light-bottom-border {
+  @include dotted-bottom-border;
+  border-image-source: url("../images/border-dots-light.svg");
 }
 
-// type styling  --------------------------------------------------------------------------------------------
-//----------------------------------------------------------------------------------------------------------
-
-@font-face {
-  font-family: "Lato";
-  font-style: normal;
-  font-weight: normal;
-  src: url(../fonts/Lato2OFL/Lato-Regular.ttf) format("truetype");
+.order-total{
+  margin: 2.5vh 0;
+  padding: 1vh 0;
 }
 
-@font-face {
-  font-family: "Lato";
-  font-style: normal;
+.button {
+  height: 4.83vh;
+  margin: 2.5vh 0;
+  padding: 1vh 10vw;
+  border-radius: 1rem;
+}
+
+// option button styles ----------------------------------------------------------------------------------------------------
+
+.option-label {
+  @include copy;
+  text-align: center;
+  margin: 1.5rem auto 0.5rem auto;
+}
+
+.option-selected {
+  display: inline-block;
+  @include copy;
+  font-size: 1.2rem;
   font-weight: bold;
-  src: url(../fonts/Lato2OFL/Lato-Bold.ttf) format("truetype");
 }
 
-@mixin copy {
-  font-family: "Lato", sans-serif;
-  font-weight: normal;
-}
-
-.copy {
+.option-deselected {
+  display: inline-block;
   @include copy;
+  color: $inactive-color;
 }
 
-.dark-copy {
-  @include copy;
-  color: $tertiary-accent-color;
+.litte-guy-selected {
+  background-image: url("../images/little-guy-selected.svg");
+  display: block;
+  height: 1rem;
+  width: 1rem;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin: 1rem 0;
 }
 
-.large-copy {
-  @include copy;
-  font-size: 1.3rem;
+.litte-guy-deselected {
+  background-image: url("../images/little-guy-deselected.svg");
+  display: block;
+  height: 1rem;
+  width: 1rem;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin: 1rem 0;
 }

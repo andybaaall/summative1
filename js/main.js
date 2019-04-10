@@ -2,23 +2,38 @@
 //$(console.log("hello world"));
 
 $("#hamburger-button").click(function(){
-  $(console.log("got a click"));
-  //toggles the menu
+  $("#dropdown").toggleClass("open");
 });
 
-$("#flat-white-button").click(function(){
-  $(console.log("got a click"));
-  //takes us to the default options screen
+// this is kind of a workaround to create the illusion of scrolling the 'menu-container' div, which i was having a hard time doing using $(...).animate()
+// oh boy it would create some problems if all of the drinks needed to have different IDs, but for the moment it's fine
+// ... kind of
+$("#scroll-down-button").click(function(){
+  $("#scroll-down-button").toggle();
+  $("#scroll-up-button").toggle();
+  $("#menu-button-1").html("hot chocolate");
+  $("#menu-button-2").html("tea");
+  $("#menu-button-3").html("long macchiato");
+  $("#menu-button-4").html("short macchiato");
+  $("#menu-button-5").html("piccolo");
+  $("#menu-button-6").html("cortado");
 });
 
-$("#long-black-button").click(function(){
-  $(console.log("got a click"));
-  //takes us to the options screen with milk greyed out
-  // (there's gotta be a way to do 'if eventTarget was longblack, then adjust the visible options', right?)
+$("#scroll-up-button").click(function(){
+  $("#scroll-down-button").toggle();
+  $("#scroll-up-button").toggle();
+  $("#menu-button-1").html("flat white");
+  $("#menu-button-2").html("latté");
+  $("#menu-button-3").html("cappuccino");
+  $("#menu-button-4").html("mocha");
+  $("#menu-button-5").html("long black");
+  $("#menu-button-6").html("short black");
 });
 
-$("#scroll-button").click(function(){
-  $(console.log("got a click"));
-  //toggle between scroll-down-button and scroll-up-button
-  //also do the scroll pls
-});
+// functions for the options page
+
+//have-here / TA function
+
+//milk function
+
+//sugar function 
