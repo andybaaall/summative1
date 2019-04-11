@@ -16,6 +16,10 @@ a {
   text-decoration: none;
 }
 
+button {
+  border: none;
+}
+
 row::after {
   content: "";
   clear: both;
@@ -40,6 +44,10 @@ row::after {
 
 .float-right{
   float: right;
+}
+
+.inline-block {
+  display: inline-block;
 }
 
 .fixed {
@@ -70,6 +78,14 @@ row::after {
 
 .justify-space-around {
   justify-content: space-around;
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+.align-items-center {
+  align-items: center;
 }
 
 .align-center {
@@ -116,6 +132,12 @@ row::after {
   @include clearfix;
 }
 
+.hamburger-button-inactive {
+  background: url("../images/hamburger-button-inactive.svg");
+  @include svg-icon;
+  @include clearfix;
+}
+
 .scroll-down-button {
   background: url("../images/scroll-down-button.svg");
   @include svg-icon;
@@ -131,6 +153,26 @@ row::after {
   position: relative;
   bottom: 2rem;
   display: none;
+}
+
+.plus-button {
+  background: url("../images/plus-button.svg");
+  @include svg-icon;
+  height: 1.5rem;
+  width: 1.5rem;
+  display: inline-block;
+  position: relative;
+  top: 1rem;
+}
+
+.minus-button {
+  background: url("../images/minus-button.svg");
+  @include svg-icon;
+  height: 1.5rem;
+  width: 1.5rem;
+  display: inline-block;
+  position: relative;
+  top: 1rem;
 }
 
 .dropdown {
@@ -169,8 +211,62 @@ row::after {
 .menu-item {
   min-height: 5.83vh;
   text-align: center;
-  padding-top: 2.5vh;
+  padding: 1.25vh 0 1.25vh 0;
 }
+
+.order-total{
+  margin: 2.5vh 0;
+  padding: 1vh 0;
+}
+
+.button {
+  height: 4.83vh;
+  margin: 2.5vh 0;
+  padding: 1vh 10vw;
+  border-radius: 1rem;
+}
+
+.large-button {
+  height: 7.5vh;
+  min-width: 50vw;
+  max-width: 75vw;
+  margin: 2.5vh 0;
+  padding: 2vh 2vw;
+  border-radius: 1rem;
+}
+
+.checkout-total {
+  margin: 10vh 0 5vh 0;
+}
+
+.payment-button-container {
+  margin-top: 10vh;
+}
+
+.processing-container {
+  min-height: 90vh;
+}
+
+.processing-bar-container {
+  margin-top: 50vh;
+}
+
+.progress {
+    position: relative;
+    overflow: hidden;
+}
+
+.progress-bar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    transition: width 15s;
+    transition-timing-function: linear;
+}
+
+
 
 // border stles ------------------------------------------------------------------------------------------------------------
 @mixin dotted-bottom-border {
@@ -187,20 +283,7 @@ row::after {
   border-image-source: url("../images/border-dots-light.svg");
 }
 
-.order-total{
-  margin: 2.5vh 0;
-  padding: 1vh 0;
-}
-
-.button {
-  height: 4.83vh;
-  margin: 2.5vh 0;
-  padding: 1vh 10vw;
-  border-radius: 1rem;
-}
-
 // option button styles ----------------------------------------------------------------------------------------------------
-
 .option-label {
   @include copy;
   text-align: center;
@@ -208,13 +291,11 @@ row::after {
 }
 
 .option-deselected {
-  display: inline-block;
   @include copy;
   color: $inactive-color;
 }
 
 .option-selected {
-  display: inline-block;
   @include copy;
   font-size: 1.1rem;
   font-weight: bold;
@@ -242,3 +323,6 @@ row::after {
   background-repeat: no-repeat;
   margin: 1rem 0;
 }
+
+// media queries ------------------------------------------------------------------------------------------------------------
+//---------------------------------------------------------------------------------------------------------------------------

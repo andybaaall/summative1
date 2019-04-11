@@ -17,7 +17,6 @@ $("#scroll-down-button").click(function(){
   $("#menu-button-5").html("piccolo");
   $("#menu-button-6").html("cortado");
   $("#menu-button-7").html("filter");
-
 });
 
 $("#scroll-up-button").click(function(){
@@ -30,7 +29,6 @@ $("#scroll-up-button").click(function(){
   $("#menu-button-5").html("long black");
   $("#menu-button-6").html("short black");
   $("#menu-button-7").html("tea");
-
 });
 
 // have here/takeaway functions ------------------------------------------------------------------------------------
@@ -175,4 +173,25 @@ $("#no-thanks , #no-thanks-little-guy" ).click(function(){
   }
   $("#no-thanks").addClass("option-selected");
   $("#no-thanks-little-guy").addClass("little-guy-selected");
+});
+
+// long black plus button function----------------------------------------------------------------------------------
+//------------------------------------------------------------------------------------------------------------------
+$("#long-black-plus-button").click(function(){
+  $("#order-total").html("$13.50");
+  $("#long-black-details").html("2 x regular long black");
+});
+
+// progress bar function ------------------------------------------------------------------------------------------------
+//-----------------------------------------------------------------------------------------------------------------------
+
+$(document).ready(function(){
+  $("#progress-top").css("width", "100%");
+  setTimeout(function(){
+    $("#progress-container").removeClass("button background-color");
+    $("#progress-top").removeClass("progress-bar supreme-color");
+    $("#progress-top").addClass("align-center copy dark-copy");
+    $("#progress-top").html("okay, Melanie, your order's ready to pick up <br> <br>");
+    $("#progress-bottom").html("<a href='index.html'> <button class='large-button background-color copy dark-copy button-copy'> awesome. </button> </a>");
+  }, 15000)
 });

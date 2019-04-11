@@ -8,20 +8,9 @@
   src: url(../fonts/Lato2OFL/Lato-Regular.ttf) format("truetype");
 }
 
-@font-face {
-  font-family: "Lato";
-  font-style: normal;
-  font-weight: bold;
-  src: url(../fonts/Lato2OFL/Lato-Bold.ttf) format("truetype");
-}
-
 @mixin copy {
   font-family: "Lato", sans-serif;
   font-weight: normal;
-}
-
-.copy {
-  @include copy;
 }
 
 .dark-copy {
@@ -34,6 +23,11 @@
   font-size: 1.3rem;
 }
 
+.really-large-copy {
+  @include copy;
+  font-size: 3rem;
+}
+
 .light-copy {
   @include copy;
   color: $background-color;
@@ -42,4 +36,8 @@
 .button-copy {
   @include copy;
   font-size: 1rem;
+}
+
+.inactive-copy {
+  color: $inactive-color;
 }

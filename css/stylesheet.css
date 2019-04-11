@@ -348,15 +348,6 @@
   font-style: normal;
   font-weight: normal;
   src: url(../fonts/Lato2OFL/Lato-Regular.ttf) format("truetype"); }
-@font-face {
-  font-family: "Lato";
-  font-style: normal;
-  font-weight: bold;
-  src: url(../fonts/Lato2OFL/Lato-Bold.ttf) format("truetype"); }
-.copy {
-  font-family: "Lato", sans-serif;
-  font-weight: normal; }
-
 .dark-copy {
   font-family: "Lato", sans-serif;
   font-weight: normal;
@@ -366,6 +357,11 @@
   font-family: "Lato", sans-serif;
   font-weight: normal;
   font-size: 1.3rem; }
+
+.really-large-copy {
+  font-family: "Lato", sans-serif;
+  font-weight: normal;
+  font-size: 3rem; }
 
 .light-copy {
   font-family: "Lato", sans-serif;
@@ -377,6 +373,9 @@
   font-weight: normal;
   font-size: 1rem; }
 
+.inactive-copy {
+  color: #848484; }
+
 body {
   padding: 0;
   margin: 0;
@@ -385,6 +384,9 @@ body {
 
 a {
   text-decoration: none; }
+
+button {
+  border: none; }
 
 row::after {
   content: "";
@@ -396,6 +398,9 @@ row::after {
 
 .float-right {
   float: right; }
+
+.inline-block {
+  display: inline-block; }
 
 .fixed {
   position: fixed; }
@@ -419,6 +424,12 @@ row::after {
 
 .justify-space-around {
   justify-content: space-around; }
+
+.flex-column {
+  flex-direction: column; }
+
+.align-items-center {
+  align-items: center; }
 
 .align-center {
   text-align: center; }
@@ -464,6 +475,20 @@ row::after {
     display: block;
     content: ''; }
 
+.hamburger-button-inactive {
+  background: url("../images/hamburger-button-inactive.svg");
+  display: block;
+  height: 8.33vh;
+  width: 11vw;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin: 0.5rem 4.16%; }
+  .hamburger-button-inactive::after {
+    clear: both;
+    display: block;
+    content: ''; }
+
 .scroll-down-button {
   background: url("../images/scroll-down-button.svg");
   display: block;
@@ -490,6 +515,36 @@ row::after {
   position: relative;
   bottom: 2rem;
   display: none; }
+
+.plus-button {
+  background: url("../images/plus-button.svg");
+  display: block;
+  height: 8.33vh;
+  width: 11vw;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin: 0.5rem 4.16%;
+  height: 1.5rem;
+  width: 1.5rem;
+  display: inline-block;
+  position: relative;
+  top: 1rem; }
+
+.minus-button {
+  background: url("../images/minus-button.svg");
+  display: block;
+  height: 8.33vh;
+  width: 11vw;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin: 0.5rem 4.16%;
+  height: 1.5rem;
+  width: 1.5rem;
+  display: inline-block;
+  position: relative;
+  top: 1rem; }
 
 .dropdown {
   position: absolute;
@@ -526,7 +581,50 @@ row::after {
 .menu-item {
   min-height: 5.83vh;
   text-align: center;
-  padding-top: 2.5vh; }
+  padding: 1.25vh 0 1.25vh 0; }
+
+.order-total {
+  margin: 2.5vh 0;
+  padding: 1vh 0; }
+
+.button {
+  height: 4.83vh;
+  margin: 2.5vh 0;
+  padding: 1vh 10vw;
+  border-radius: 1rem; }
+
+.large-button {
+  height: 7.5vh;
+  min-width: 50vw;
+  max-width: 75vw;
+  margin: 2.5vh 0;
+  padding: 2vh 2vw;
+  border-radius: 1rem; }
+
+.checkout-total {
+  margin: 10vh 0 5vh 0; }
+
+.payment-button-container {
+  margin-top: 10vh; }
+
+.processing-container {
+  min-height: 90vh; }
+
+.processing-bar-container {
+  margin-top: 50vh; }
+
+.progress {
+  position: relative;
+  overflow: hidden; }
+
+.progress-bar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0%;
+  height: 100%;
+  transition: width 15s;
+  transition-timing-function: linear; }
 
 .dotted-bottom-border {
   border-bottom: 0.3rem solid transparent;
@@ -541,16 +639,6 @@ row::after {
   border-image-repeat: round;
   border-image-source: url("../images/border-dots-light.svg"); }
 
-.order-total {
-  margin: 2.5vh 0;
-  padding: 1vh 0; }
-
-.button {
-  height: 4.83vh;
-  margin: 2.5vh 0;
-  padding: 1vh 10vw;
-  border-radius: 1rem; }
-
 .option-label {
   font-family: "Lato", sans-serif;
   font-weight: normal;
@@ -558,13 +646,11 @@ row::after {
   margin: 1.5rem auto 0.5rem auto; }
 
 .option-deselected {
-  display: inline-block;
   font-family: "Lato", sans-serif;
   font-weight: normal;
   color: #848484; }
 
 .option-selected {
-  display: inline-block;
   font-family: "Lato", sans-serif;
   font-weight: normal;
   font-size: 1.1rem;
