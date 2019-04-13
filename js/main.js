@@ -195,3 +195,14 @@ $(document).ready(function(){
     $("#progress-bottom").html("<a href='index.html'> <button class='large-button background-color copy dark-copy button-copy'> awesome. </button> </a>");
   }, 15000)
 });
+
+// boxer functions ------------------------------------------------------------------------------------------------------
+//-----------------------------------------------------------------------------------------------------------------------
+
+$("#boxer-button").click(function(){
+  $("#boxer-container").show();
+});
+
+$("#blend-close-button").click(function(){
+  $("#boxer-container").hide();
+});

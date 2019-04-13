@@ -8,7 +8,7 @@
 </style>
 <circle class="st0" cx="41.3" cy="41" r="39"/>
 <g>
-	<polyline class="st1" points="40.3,25 40.3,57 55.3,41 	"/>
-	<polyline class="st1" points="40.3,25 40.3,57 25.3,41 	"/>
+	<polyline class="st1" points="56.3,41 24.3,41 40.3,56 	"/>
+	<polyline class="st1" points="56.3,41 24.3,41 40.3,26 	"/>
 </g>
 </svg>

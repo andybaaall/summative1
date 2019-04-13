@@ -9,10 +9,29 @@
   </head>
   <body>
     <div class="fixed-top">
-      <div class="row col12 flexbox justify-space-between main-accent-color">
-        <div class="logo float-left">
+      <div class="row col12 flexbox justify-space-between main-accent-color desktop-logo-container">
+        <div class="logo float-left desktop-hide tablet-hide">
         </div>
-        <div id="hamburger-button" class="hamburger-button float-right" alt="Dropdown menu button">
+        <div id="hamburger-button" class="float-right desktop-hide tablet-hide hamburger-button" alt="Dropdown menu button">
+        </div>
+        <div class="mobile-hide center-logo">
+        </div>
+      </div>
+      <div class="desktop-only mobile-hide col12 flexbox justify-space-between main-accent-color">
+        <div class="float-left navbar-item supreme-color copy light-copy">
+          supreme blend
+        </div>
+        <div class="float-left navbar-item boxer-color copy light-copy">
+          boxer blend
+        </div>
+        <div class="float-left navbar-item colombia-color copy light-copy">
+          colombia cinai
+        </div>
+        <div class="float-left navbar-item ethiopia-color copy light-copy">
+          ethiopia yirgacheffe
+        </div>
+        <div class="col3 float-left navbar-item main-accent-color copy light-copy">
+          privacy policy
         </div>
       </div>
 
@@ -29,14 +48,15 @@
         <div class="dropdown-menu-item copy large-copy light-copy ethiopia-color">
           ethiopia yirgacheffe
         </div>
-        <div class="dropdown-menu-item copy large-copy light-copy">
+        <div class="dropdown-menu-item copy large-copy light-copy light-bottom-border">
           privacy policy
         </div>
       </div>
+
     </div>
 
-    <div id="grid-container" class="grid-container col12 background-color">
-      <div>
+    <div id="options-container" class="options-container col12 background-color">
+      <div class="option-row">
         <div class="col12 option-label">
           have here or take away?
         </div>
@@ -56,7 +76,7 @@
         </div>
       </div>
 
-      <div>
+      <div class="option-row">
         <div class="col12 option-label">
           milk
         </div>
@@ -81,7 +101,7 @@
         </div>
       </div>
 
-      <div>
+      <div class="option-row">
         <div class="col12 option-label">
           sugar?
         </div>

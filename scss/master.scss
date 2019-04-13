@@ -99,15 +99,6 @@ row::after {
 .align-right {
   text-align: right;
 }
-
-.grid-container {
-  min-height: 80vh;
-  display: grid;
-  grid-template-columns: auto;
-  grid-template-rows: repeat(3, 1fr);
-  overflow: scroll;
-}
-
 // page elements  --------------------------------------------------------------------------------------------
 //----------------------------------------------------------------------------------------------------------
 @mixin svg-icon {
@@ -193,6 +184,42 @@ row::after {
   padding-top: 5.5vh;
 }
 
+.blend-container {
+  @include clearfix;
+  min-height: 80vh;
+  position: absolute;
+  z-index: 200;
+  display: none;
+}
+
+@mixin blend-image {
+  min-height: 30vh;
+  max-height: 50vh;
+  margin: 2.5vh 0;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  // this mixin exists because in theory there's going to be a bunch of these
+}
+
+.boxer-image {
+  @include blend-image;
+  background-image: url("../images/boxer-blend-large.png");
+}
+
+.back-button {
+  background: url("../images/back-button.svg");
+  display: block;
+  height: 8.33vh;
+  width: 11vw;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin: 0 auto;
+  position: relative;
+  bottom: 2rem;
+  bottom: 0; }
+
 .menu-tab-container{
   @include clearfix;
 }
@@ -268,7 +295,7 @@ row::after {
 
 
 
-// border stles ------------------------------------------------------------------------------------------------------------
+// border styles ---------------------------------------------------------------------------------------------------------
 @mixin dotted-bottom-border {
   border-bottom: 0.3rem solid transparent;
   border-image-source: url("../images/border-dots.svg");
@@ -283,7 +310,7 @@ row::after {
   border-image-source: url("../images/border-dots-light.svg");
 }
 
-// option button styles ----------------------------------------------------------------------------------------------------
+// option button styles --------------------------------------------------------------------------------------------------
 .option-label {
   @include copy;
   text-align: center;
@@ -324,5 +351,6 @@ row::after {
   margin: 1rem 0;
 }
 
-// media queries ------------------------------------------------------------------------------------------------------------
-//---------------------------------------------------------------------------------------------------------------------------
+// media queries --------------------------------------------------------------------------------------------------------
+//-----------------------------------------------------------------------------------------------------------------------
+@import "media-queries";

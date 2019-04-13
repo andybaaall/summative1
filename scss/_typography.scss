@@ -8,6 +8,12 @@
   src: url(../fonts/Lato2OFL/Lato-Regular.ttf) format("truetype");
 }
 
+@font-face {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: bold;
+  src: url(../fonts/Lato2OFL/Lato-Bold.ttf) format("truetype"); }
+
 @mixin copy {
   font-family: "Lato", sans-serif;
   font-weight: normal;
@@ -41,3 +47,8 @@
 .inactive-copy {
   color: $inactive-color;
 }
+
+.bold-copy {
+  font-family: "Lato", sans-serif;
+  font-weight: normal;
+  font-weight: bold; }
