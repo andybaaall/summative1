@@ -1,6 +1,6 @@
 // imports  --------------------------------------------------------------------------------------------------
 //----------------------------------------------------------------------------------------------------------
-@import "variables"; //layout and color]
+@import "variables"; //layout and color
 @import "typography";
 
 // resets --------------------------------------------------------------------------------------------------
@@ -166,6 +166,21 @@ row::after {
   top: 1rem;
 }
 
+.paywave-icon {
+  background: url("../images/paywave-icon.svg");
+  @include svg-icon;
+}
+
+.google-pay-icon {
+  background: url("../images/google-pay-icon.svg");
+  @include svg-icon;
+}
+
+.apple-pay-icon {
+  background: url("../images/apple-pay-icon.svg");
+  @include svg-icon; 
+}
+
 .dropdown {
   position: absolute;
   height: 0;
@@ -245,7 +260,6 @@ row::after {
   margin: 2.5vh 0;
   padding: 1vh 0;
 }
-
 .button {
   height: 4.83vh;
   margin: 2.5vh 0;
@@ -268,6 +282,10 @@ row::after {
 
 .payment-button-container {
   margin-top: 10vh;
+}
+
+.paywave-container {
+  height: 20vh;
 }
 
 .processing-container {
@@ -308,6 +326,10 @@ row::after {
 .light-bottom-border {
   @include dotted-bottom-border;
   border-image-source: url("../images/border-dots-light.svg");
+}
+.dashed-border {
+  border: 0.2rem dashed;
+  border-color: $secondary-accent-color;
 }
 
 // option button styles --------------------------------------------------------------------------------------------------

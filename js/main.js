@@ -199,10 +199,10 @@ $(document).ready(function(){
 // boxer functions ------------------------------------------------------------------------------------------------------
 //-----------------------------------------------------------------------------------------------------------------------
 
-$("#boxer-button").click(function(){
+$("#boxer-button , #navbar-boxer-button").click(function(){
   $("#boxer-container").show();
 });
 
-$("#blend-close-button").click(function(){
+$("#blend-close-button , #navbar-blend-close-button").click(function(){
   $("#boxer-container").hide();
 });

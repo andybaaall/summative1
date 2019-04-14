@@ -549,6 +549,36 @@ row::after {
   position: relative;
   top: 1rem; }
 
+.paywave-icon {
+  background: url("../images/paywave-icon.svg");
+  display: block;
+  height: 8.33vh;
+  width: 11vw;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin: 0.5rem 4.16%; }
+
+.google-pay-icon {
+  background: url("../images/google-pay-icon.svg");
+  display: block;
+  height: 8.33vh;
+  width: 11vw;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin: 0.5rem 4.16%; }
+
+.apple-pay-icon {
+  background: url("../images/apple-pay-icon.svg");
+  display: block;
+  height: 8.33vh;
+  width: 11vw;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin: 0.5rem 4.16%; }
+
 .dropdown {
   position: absolute;
   height: 0;
@@ -642,6 +672,9 @@ row::after {
 .payment-button-container {
   margin-top: 10vh; }
 
+.paywave-container {
+  height: 20vh; }
+
 .processing-container {
   min-height: 90vh; }
 
@@ -673,6 +706,10 @@ row::after {
   border-image-slice: 33%;
   border-image-repeat: round;
   border-image-source: url("../images/border-dots-light.svg"); }
+
+.dashed-border {
+  border: 0.2rem dashed;
+  border-color: #F2CFD0; }
 
 .option-label {
   font-family: "Lato", sans-serif;
@@ -748,7 +785,16 @@ row::after {
 
   .option-label {
     font-size: 1.5rem;
-    margin: 1rem; } }
+    margin: 1rem; }
+
+  .blend-container {
+    min-height: 81.667vh; }
+
+  .processing-container {
+    min-height: 90vh;
+    top: 10vh;
+    position: absolute;
+    min-width: 100vw; } }
 @media only screen and (min-width: 1000px) {
   .desktop-hide {
     display: none; }
@@ -792,6 +838,30 @@ row::after {
 
   .option-label {
     font-size: 1.5rem;
-    margin: 1.5rem auto 1rem; } }
+    margin: 1.5rem auto 1rem; }
+
+  .blend-container {
+    min-height: 81.667vh; }
+
+  .processing-container {
+    min-height: 90vh;
+    top: 10vh;
+    position: absolute;
+    min-width: 100vw; }
+
+  .order-total {
+    display: block;
+    width: 100vw; }
+
+  .pay-now-container {
+    position: absolute;
+    top: 8.33vh;
+    left: 25vw;
+    right: auto; }
+
+  .paywave-container {
+    height: 15vh;
+    min-width: 20vw;
+    max-width: 45vw; } }
 
 /*# sourceMappingURL=stylesheet.css.map */

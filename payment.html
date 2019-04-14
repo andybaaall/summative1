@@ -21,7 +21,7 @@
         <div class="float-left navbar-item supreme-color copy light-copy">
           supreme blend
         </div>
-        <div class="float-left navbar-item boxer-color copy light-copy">
+        <div id="navbar-boxer-button" class="float-left navbar-item boxer-color copy light-copy">
           boxer blend
         </div>
         <div class="float-left navbar-item colombia-color copy light-copy">
@@ -39,7 +39,7 @@
         <div class="dropdown-menu-item copy large-copy light-copy supreme-color">
           supreme blend
         </div>
-        <div class="dropdown-menu-item copy large-copy light-copy boxer-color">
+        <div id="boxer-button" class="dropdown-menu-item copy large-copy light-copy boxer-color">
           boxer blend
         </div>
         <div class="dropdown-menu-item copy large-copy light-copy colombia-color">
@@ -48,10 +48,42 @@
         <div class="dropdown-menu-item copy large-copy light-copy ethiopia-color">
           ethiopia yirgacheffe
         </div>
-        <div class="dropdown-menu-item copy large-copy light-copy light-bottom-border">
+        <div class="dropdown-menu-item copy large-copy light-copy">
           privacy policy
         </div>
       </div>
+
+    <div id="boxer-container" class="col12 float-left blend-container background-color">
+      <br>
+      <div class="col12 align-center large-copy dark-copy">
+        boxer
+      </div>
+      <div class="col6 offset-left3 offset-right3">
+        <div class="boxer-image" alt="Product photograph showing a 250g bag of Boxer beans.">
+        </div>
+      </div>
+      <div class="col8 offset-left2 offset-right2 copy dark-copy">
+        <p>A Brazil-based blend designed with the espresso drinker in mind. With its distinctive dark chocolate notes, full body and pleasant finish, the Boxer blend makes gutsy milk drinks, and hefty espresso.</p>
+      </div>
+      <div class="row">
+        <div class="col5 offset-left1 float-left align-left bold-copy dark-copy">
+          aroma
+          <br> acidity
+          <br> body
+          <br> finish
+        </div>
+        <div class="col5 offset-right1 float-right align-right dark-copy">
+          smokey, dark cocoa
+          <br> soft
+          <br> viscous
+          <br> malt & chocolate
+        </div>
+      </div>
+      <div class="col12 flexbox justify-center">
+          <div id="blend-close-button" class="back-button">
+          </div>
+      </div>
+    </div>
 
     </div>
 
@@ -65,16 +97,27 @@
         </div>
         <div class="col12 flexbox align-items-center flex-column payment-button-container">
           <a href="processing.html">
-            <button class="button large-button main-accent-color copy dark-copy button-copy">
+            <button class="button large-button main-accent-color copy dark-copy button-copy tablet-hide desktop-hide">
               pay with saved card
             </button>
           </a>
-          <button class="button large-button main-accent-color copy dark-copy button-copy">
+          <button class="tablet-hide desktop-hide button large-button main-accent-color copy dark-copy button-copy">
             pay with new card
+          </button>
+          <button class="mobile-hide button large-button main-accent-color copy dark-copy button-copy">
+            pay with eftpos
           </button>
           <button class="button large-button main-accent-color copy dark-copy button-copy">
             pay cash
           </button>
+          <div class="flexbox justify-space-between align-items-center button large-button background-color paywave-container dashed-border">
+            <div class="paywave-icon">
+            </div>
+            <div class="google-pay-icon">
+            </div>
+            <div class="apple-pay-icon">
+            </div>
+          </div>
         </div>
       </div>
     </div>

@@ -36,6 +36,15 @@
     font-size: 1.5rem;
     margin: 1rem
   }
+  .blend-container {
+    min-height: 81.667vh;
+  }
+  .processing-container {
+    min-height: 90vh;
+    top: 10vh;
+    position: absolute;
+    min-width: 100vw;
+}
 }
 
 
@@ -78,5 +87,29 @@
   .option-label {
     font-size: 1.5rem;
     margin: 1.5rem auto 1rem;
+  }
+  .blend-container {
+    min-height: 81.667vh;
+  }
+  .processing-container {
+    min-height: 90vh;
+    top: 10vh;
+    position: absolute;
+    min-width: 100vw;
+}
+  .order-total {
+    display: block;
+    width: 100vw;
+  }
+  .pay-now-container {
+    position: absolute;
+    top: 8.33vh;
+    left: 25vw;
+    right: auto;
+  }
+  .paywave-container {
+    height: 15vh;
+    min-width: 20vw;
+    max-width: 45vw;
   }
 }
