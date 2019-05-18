@@ -178,7 +178,7 @@ row::after {
 
 .apple-pay-icon {
   background: url("../images/apple-pay-icon.svg");
-  @include svg-icon; 
+  @include svg-icon;
 }
 
 .dropdown {
@@ -270,6 +270,7 @@ row::after {
 .large-button {
   height: 7.5vh;
   min-width: 50vw;
+  width: 50vw;
   max-width: 75vw;
   margin: 2.5vh 0;
   padding: 2vh 2vw;

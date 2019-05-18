@@ -386,6 +386,9 @@
   font-weight: normal;
   font-weight: bold; }
 
+.text-align-center {
+  text-align: center; }
+
 body {
   padding: 0;
   margin: 0;
@@ -661,6 +664,7 @@ row::after {
 .large-button {
   height: 7.5vh;
   min-width: 50vw;
+  width: 50vw;
   max-width: 75vw;
   margin: 2.5vh 0;
   padding: 2vh 2vw;
